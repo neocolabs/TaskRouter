@@ -1,0 +1,16 @@
+org: madonnakaren
+app: task-manager-admin
+service: task-manager-admin
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  region: ap-south-1
+
+constructs:
+  landing:
+    type: single-page-app
+    path: build
+
+plugins:
+  - serverless-lift
